@@ -8,6 +8,10 @@ on:
 jobs:
   debug:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Carrey-Dashboard/project # ✅ Fix path
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
