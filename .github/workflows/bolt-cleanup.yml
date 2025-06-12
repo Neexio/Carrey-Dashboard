@@ -8,6 +8,10 @@ on:
 jobs:
   cleanup:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Carrey-Dashboard/project # ✅ Important fix
+
     steps:
       - uses: actions/checkout@v3
 
